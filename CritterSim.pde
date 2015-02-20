@@ -5,6 +5,7 @@ void setup() {
   e = new Environment();
   e.populate();
   e.passDay();
+
 }
 
 void draw() {

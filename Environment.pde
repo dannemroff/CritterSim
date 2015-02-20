@@ -8,7 +8,7 @@ class Environment {
     }
     for (int i=0; i<=5; i++) {
       //Add Ugly Critters
-      population.add(new SmellyCritter());
+      population.add(new UglyCritter());
     }
     for (int i=0; i<=5; i++) {
       //Add Awkward Critters
@@ -29,7 +29,6 @@ class Environment {
       println(population.get(i).toString());
     }
 
-    println("Summary");
   }
 }
 

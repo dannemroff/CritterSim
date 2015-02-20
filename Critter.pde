@@ -1,7 +1,7 @@
 abstract class Critter{
   int age = 0;
   int health = 100;
-  int luck = int(random(100));
+  int luck = int(random(10));
   
   abstract void passDay();
   
