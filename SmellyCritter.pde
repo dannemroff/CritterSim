@@ -1,5 +1,8 @@
 class SmellyCritter extends Critter {
 
+  void SmellyCritter(){
+    
+  }
 
   void passDay() {
     eat();
@@ -9,8 +12,7 @@ class SmellyCritter extends Critter {
   }
 
   void eat() {
-    float odds = random(10);
-    if (odds <= 4) {
+    if (calculateChances(40)) {
       health = health + 6;
     } else {
       health = health - 10;
@@ -24,8 +26,7 @@ class SmellyCritter extends Critter {
   }
   
   void snooze(){
-    float odds = random(10);
-    if (odds <= 8){
+    if (calculateChances(80)){
       health = health + 2;
     } else {
       health--;
