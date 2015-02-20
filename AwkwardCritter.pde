@@ -1,7 +1,6 @@
 class AwkwardCritter extends Critter {
-
+  
   void AwkwardCritter(){
-    
   }
 
   void passDay() {
@@ -9,7 +8,6 @@ class AwkwardCritter extends Critter {
     yodel();
     meditate();
     snooze();
-    age();
   }
 
   void eat() {
@@ -44,6 +42,10 @@ class AwkwardCritter extends Critter {
     } else {
       health = health - 2;
     }
+  }
+  
+  String typeOfCritter(){
+  return "Awkward Critter";
   }
   
 }

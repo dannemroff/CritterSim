@@ -1,13 +1,12 @@
 class UglyCritter extends Critter {
 
-  void UglyCritter(){
-    
+
+  void UglyCritter() {
   }
 
   void passDay() {
     eat();
     snooze();
-    age();
   }
 
   void eat() {
@@ -17,14 +16,17 @@ class UglyCritter extends Critter {
       health = health - 15;
     }
   }
-  
-  void snooze(){
-    if (calculateChances(50)){
+
+  void snooze() {
+    if (calculateChances(50)) {
       health = health + 9;
     } else {
       health = health - 2;
     }
   }
-  
+
+  String typeOfCritter() {
+    return "Ugly Critter";
+  }
 }
 

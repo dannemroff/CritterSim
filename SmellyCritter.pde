@@ -1,14 +1,12 @@
 class SmellyCritter extends Critter {
 
-  void SmellyCritter(){
-    
+  void SmellyCritter() {
   }
 
   void passDay() {
     eat();
     dance();
     snooze();
-    age();
   }
 
   void eat() {
@@ -18,20 +16,23 @@ class SmellyCritter extends Critter {
       health = health - 10;
     }
   }
-  
-  void dance(){
-   if (age>15){
-    health++;
-   } 
+
+  void dance() {
+    if (age>15) {
+      health++;
+    }
   }
-  
-  void snooze(){
-    if (calculateChances(80)){
+
+  void snooze() {
+    if (calculateChances(80)) {
       health = health + 2;
     } else {
       health--;
     }
   }
-  
+
+  String typeOfCritter() {
+    return "Smelly Critter";
+  }
 }
 
