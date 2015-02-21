@@ -10,8 +10,8 @@ abstract class Critter {
     return age;
   }
 
-  void age() {
-    age = age + 1;
+  void age(int ageAmount) {
+    age = age + ageAmount;
   }
 
   void setAge(int newAge) {
@@ -35,7 +35,7 @@ abstract class Critter {
   }
 
   String toString() {
-    return "Age: " + age + " - Health: " + health + " - Luck: " + luck;
+    return "Age: " + age + " | Health: " + health + " | Luck: " + luck;
   }
 
   boolean calculateChances(int pct) {

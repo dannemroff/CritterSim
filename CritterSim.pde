@@ -7,7 +7,8 @@ void setup() {
   e.populate();
   e.passDay(0);
   println("");
-  println("Press a key to travel 30 days into the future!");
+  println("Press ENTER to travel 1 day into the future");
+  println("Or press SPACE to travel 30 days");
 }
 
 void draw() {
@@ -17,12 +18,21 @@ void draw() {
   text("Day " + numOfDays, 0, height-10);
 }
 
-void keyReleased() {
-  numOfDays = numOfDays + 30;
-  println("");
-  println("");
-  println("Day " + numOfDays + ":");
-  println("");
-  e.passDay(numOfDays);
+void keyPressed() {
+  if (key == ' ') {
+    numOfDays = numOfDays + 30;
+    println("");
+    println("");
+    println("Day " + numOfDays + ":");
+    println("");
+    e.passDay(numOfDays);
+  } else if (keyCode == ENTER) {
+    numOfDays = numOfDays + 1;
+    println("");
+    println("");
+    println("Day " + numOfDays + ":");
+    println("");
+    e.passDay(numOfDays);
+  }
 }
 
