@@ -5,8 +5,7 @@ void setup() {
   size(200, 200);
   e = new Environment();
   e.populate();
-  e.passDay(0);
-  println("");
+  //println("");
   println("Press ENTER to travel 1 day into the future");
   println("Or press SPACE to travel 30 days");
 }
@@ -25,14 +24,16 @@ void keyPressed() {
     println("");
     println("Day " + numOfDays + ":");
     println("");
-    e.passDay(numOfDays);
+    for(int i=0; i < 30; i++){
+    e.passDay();
+    }
   } else if (keyCode == ENTER) {
     numOfDays = numOfDays + 1;
     println("");
     println("");
     println("Day " + numOfDays + ":");
     println("");
-    e.passDay(numOfDays);
+    e.passDay();
   }
 }
 
